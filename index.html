@@ -116,6 +116,19 @@
         .like-btn.liked {
             color: #38bdf8;
         }
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+                border-color: rgba(56, 189, 248, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 25px rgba(56, 189, 248, 0.7);
+                border-color: rgba(56, 189, 248, 0.8);
+            }
+        }
+        .glowing-frame {
+            animation: pulse-glow 4s infinite ease-in-out;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -214,31 +227,31 @@
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-12 mt-12 justify-items-center">
                     <!-- Crew Member 1 -->
                     <div class="crew-member text-center group cursor-pointer" data-modal-target="letter-hoai">
-                        <img src="H.PNG"w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full border-4 border-slate-700 group-hover:border-sky-400 transition-all duration-300 transform group-hover:scale-110" alt="Lê Hồng Hoài">
+                        <img src="H.PNG" class="w-32 h-44 md:w-40 md:h-56 mx-auto rounded-xl border-4 object-cover glowing-frame transition-all duration-300 transform group-hover:scale-105" alt="Lê Hồng Hoài">
                         <h3 class="mt-4 text-lg font-semibold text-white">Lê Hồng Hoài</h3>
                         <p class="text-sm text-sky-400">COO</p>
                     </div>
                     <!-- Crew Member 2 -->
                      <div class="crew-member text-center group cursor-pointer" data-modal-target="letter-ngan">
-                        <img src="N.PNG" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full border-4 border-slate-700 group-hover:border-sky-400 transition-all duration-300 transform group-hover:scale-110" alt="Trần Thiên Ngân">
+                        <img src="N.PNG" class="w-32 h-44 md:w-40 md:h-56 mx-auto rounded-xl border-4 object-cover glowing-frame transition-all duration-300 transform group-hover:scale-105" alt="Trần Thiên Ngân">
                         <h3 class="mt-4 text-lg font-semibold text-white">Trần Thiên Ngân</h3>
                         <p class="text-sm text-sky-400">Lead Developer</p>
                     </div>
                     <!-- Crew Member 3 -->
                      <div class="crew-member text-center group cursor-pointer" data-modal-target="letter-duyen">
-                        <img src="D.jpeg" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full border-4 border-slate-700 group-hover:border-sky-400 transition-all duration-300 transform group-hover:scale-110" alt="Đỗ Trần Mỹ Duyên">
+                        <img src="D.jpeg" class="w-32 h-44 md:w-40 md:h-56 mx-auto rounded-xl border-4 object-cover glowing-frame transition-all duration-300 transform group-hover:scale-105" alt="Đỗ Trần Mỹ Duyên">
                         <h3 class="mt-4 text-lg font-semibold text-white">Đỗ Trần Mỹ Duyên</h3>
                         <p class="text-sm text-sky-400">Marketing Lead</p>
                     </div>
                     <!-- Crew Member 4 -->
                     <div class="crew-member text-center group cursor-pointer" data-modal-target="letter-tran">
-                        <img src="T.jpg" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full border-4 border-slate-700 group-hover:border-sky-400 transition-all duration-300 transform group-hover:scale-110" alt="Nguyễn Thị Bảo Trân">
+                        <img src="T.jpgjpg" class="w-32 h-44 md:w-40 md:h-56 mx-auto rounded-xl border-4 object-cover glowing-frame transition-all duration-300 transform group-hover:scale-105" alt="Nguyễn Thị Bảo Trân">
                         <h3 class="mt-4 text-lg font-semibold text-white">Nguyễn Thị Bảo Trân</h3>
                         <p class="text-sm text-sky-400">Creative Designer</p>
                     </div>
-                    <!-- Crew Member 5 -->
+                     <!-- Crew Member 5 -->
                     <div class="crew-member text-center group cursor-pointer" data-modal-target="letter-huong">
-                        <img src="Hg.JPG" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full border-4 border-slate-700 group-hover:border-sky-400 transition-all duration-300 transform group-hover:scale-110" alt="Nguyễn Thị Kim Hường">
+                        <img src="Hg.PNG" class="w-32 h-44 md:w-40 md:h-56 mx-auto rounded-xl border-4 object-cover glowing-frame transition-all duration-300 transform group-hover:scale-105" alt="Nguyễn Thị Kim Hường">
                         <h3 class="mt-4 text-lg font-semibold text-white">Nguyễn Thị Kim Hường</h3>
                         <p class="text-sm text-sky-400">Content Lead</p>
                     </div>
